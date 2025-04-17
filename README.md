@@ -1,9 +1,8 @@
 # geohub-services-qgis-plugin
 A QGIS plugin to import Ontario Geohub LIO data layers into the QGIS project
 
-# Using the plugin
+### Testing the plugin
 
-- To test the plugin
 1. Download this repo and unzip
 2. Quit QGIS
 3. File the unzipped folder into your QGIS plugins directory
@@ -16,7 +15,7 @@ A QGIS plugin to import Ontario Geohub LIO data layers into the QGIS project
 - For now - the plugin will recreate the load_lyrs_from_geohub_services pyqgis script, and nothing more. [https://github.com/eco-gis-helpers/geohub-services](https://github.com/eco-gis-helpers/geohub-services/blob/main/load_lyrs_from_geohub_services.py)
 
 
-# Setting up the dev environment / recompiling resources.py
+### Setting up the dev environment / recompiling resources.py
 Used Plugin Builder 3 Within QGIS to make the plugin structure
 The icon.png must be 24x24 pixels
 
