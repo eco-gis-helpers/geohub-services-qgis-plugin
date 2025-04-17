@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/plugins/geohub_services" >
+        <file>icon.png</file>
+    </qresource>
+</RCC>
