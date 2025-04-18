@@ -227,9 +227,9 @@ class OntarioGeohub:
         # make the warning dialog string and pass it to the class above
         warn_str = (
             "Please note:\n\n"
-            "- When querying by canvas, ensure you are sufficiently zoomed in to avoid performance issues \n"
-            "- When querying by selected layer \,  avoid using an excessive number of features or very large polygons \n\n"
-            "Otherwise \, QGIS may become unresponsive or crash."
+            "- When querying by canvas,  ensure you are sufficiently zoomed in to avoid performance issues \n"
+            "- When querying by selected layer,  avoid using an excessive number of features or very large polygons \n\n"
+            "Otherwise,  QGIS may become unresponsive or crash."
         )
 
         warn_dialog = WarningDialog(warn_str)
