@@ -23,13 +23,46 @@
 """
 from qgis.PyQt.QtCore import QSettings, QTranslator, QCoreApplication
 from qgis.PyQt.QtGui import QIcon
-from qgis.PyQt.QtWidgets import QAction
+from qgis.PyQt.QtWidgets import QAction, QDialog
+from qgis.utils import iface
+from qgis.core import (
+    Qgis,
+    QgsMessageLog,
+    QgsProject,
+    QgsVectorLayer,
+    QgsFeature,
+    QgsWkbTypes,
+    QgsMapLayer,
+    QgsProcessingFeatureSourceDefinition
+    )
+from qgis import processing
 
 # Initialize Qt resources from file resources.py
 from .resources import *
 # Import the code for the dialog
 from .geohub_services_dialog import OntarioGeohubDialog
 import os.path
+from .lio_list import lio_list
+
+from .geohub_worker import (
+    internet_on,
+    get_service_crs,
+    create_layer_group,
+    canvas_bbox_for_service,
+    rest_request,
+    layer_bbox_for_service,
+    layer_rest_request,
+    clipping,
+    WarningDialog,
+    PolygonDialog,
+    LayerSelectionDialog
+)
+
+from .geohub_worker import (
+    treeRoot,
+    counter,
+    group_name
+)
 
 
 class OntarioGeohub:
@@ -185,16 +218,148 @@ class OntarioGeohub:
 
         # Create the dialog with elements (after translation) and keep reference
         # Only create GUI ONCE in callback, so that it will only load when the plugin is started
-        if self.first_start == True:
+        if self.first_start:
             self.first_start = False
-            self.dlg = OntarioGeohubDialog()
 
-        # show the dialog
-        self.dlg.show()
-        # Run the dialog event loop
-        result = self.dlg.exec_()
-        # See if OK was pressed
-        if result:
-            # Do something useful here - delete the line containing pass and
-            # substitute with your code.
-            pass
+        service_crs = get_service_crs()
+        pyqgis_group = create_layer_group(counter, group_name)
+
+        # make the warning dialog string and pass it to the class above
+        warn_str = (
+            "Please note:\n\n"
+            "- When querying by canvas, ensure you are sufficiently zoomed in to avoid performance issues \n"
+            "- When querying by selected layer \,  avoid using an excessive number of features or very large polygons \n\n"
+            "Otherwise \, QGIS may become unresponsive or crash."
+        )
+
+        warn_dialog = WarningDialog(warn_str)
+
+        # pass the lio list to the layer selection dialog class made above
+        dialog = LayerSelectionDialog(lio_list)
+
+        if internet_on():
+            if warn_dialog.exec_() == QDialog.Accepted:
+                QgsMessageLog.logMessage("Zoom warning accepted. Selecting layers of interest", "Geohub-Services", level=Qgis.Info)
+                print("Zoom warning accepted. Selecting layers of interest")
+                if dialog.exec_() == QDialog.Accepted:
+                    selected_layers = dialog.selected_layers()
+                    
+                    # make a list to hold the temporary layers
+                    temp_layers = []
+                    if dialog.get_bbox_function() == "layer_bbox_for_service":
+                        QgsMessageLog.logMessage("Querying by selected layer", "Geohub-Services", level=Qgis.Info)
+                        print("Querying by selected layer")
+
+                        polygon_dialog = PolygonDialog()
+
+                        if polygon_dialog.exec_() == QDialog.Accepted:
+                            selected_polygon_layer, layer_name = polygon_dialog.get_selected_layer()
+                            QgsMessageLog.logMessage(f"User selected polygon layer: {layer_name}", "Geohub-Services", level=Qgis.Info)
+                            print(f"User selected polygon layer: {layer_name}")
+
+                            # if no selected layer, raise a value error and notify the user
+                            if not selected_polygon_layer:
+                                treeRoot.removeChildNode(pyqgis_group)
+                                iface.messageBar().pushMessage("Error", "No layer selected!", level=Qgis.Critical)
+                                QgsMessageLog.logMessage("No layer selected!", "Geohub-Services", level=Qgis.Critical)
+                                print("No layer selected!")
+                                return
+
+                            # If the selected layer is a raster, throw an error
+                            # this shouldnt ever be possible with the new layer selection filter, but just in case
+                            elif selected_polygon_layer.type() == QgsMapLayer.RasterLayer:
+                                treeRoot.removeChildNode(pyqgis_group)
+                                iface.messageBar().pushMessage("Error", "Selected layer is a raster!", level=Qgis.Critical)
+                                QgsMessageLog.logMessage("The selected layer is a raster!", "Geohub-Services", level=Qgis.Critical)
+                                print("The selected layer is a raster!")
+                                return
+
+                            # If the selected layer is a multi-polygon or polygon, keep going!
+                            elif QgsWkbTypes.displayString(selected_polygon_layer.wkbType()) in ["MultiPolygon", "Polygon"]:
+                                pass
+
+                            # If the selected layer is not a Polygon or MultiPolygon, throw an error
+                            # again, this shouldnt even be possible with the new layer selection filter, but just in case
+                            else:
+                                treeRoot.removeChildNode(pyqgis_group)
+                                iface.messageBar().pushMessage("Error", "Selected layer is not a polygon!", level=Qgis.Critical)
+                                QgsMessageLog.logMessage("The selected layer needs to be a polygon!", "Geohub-Services", level=Qgis.Critical)
+                                print("The selected layer needs to be a polygon!")
+                                return
+                                
+                            # get a list of the bboxes for each of the selected layers geometries
+                            bbox_list = layer_bbox_for_service(service_crs, selected_polygon_layer)
+
+                            layer_id_list = []
+                            overlay_layer_list = []
+
+                            for feature in selected_polygon_layer.getFeatures():
+                                layer_id = feature.id()
+                                layer_id_list.append(layer_id)
+                                geometry = feature.geometry()
+
+                                # make temp layers of each feature in the active layer for the clipping function
+                                temp_layer_name = f"temp_clip_{layer_id}"
+                                # load the temp layers in memory
+                                temp_layer = QgsVectorLayer("Polygon?crs=" + selected_polygon_layer.crs().authid(), temp_layer_name, "memory")
+                                temp_layer_provider = temp_layer.dataProvider()
+
+                                # # Add the feature geometry to the temporary layer
+                                temp_feature = QgsFeature()
+                                temp_feature.setGeometry(geometry)
+                                temp_layer_provider.addFeature(temp_feature)
+                                temp_layer.updateExtents()
+
+                                # Add the temporary layer to the project (for visibility in processing)
+                                # TODO - do we need to show these temporary layers in the layers pane?
+                                QgsProject.instance().addMapLayer(temp_layer)
+                                temp_layers.append(temp_layer)
+                                # Now that the layer is in the project, use it in the processing tool as the overlay for clipping
+                                overlay_source = QgsProcessingFeatureSourceDefinition(temp_layer.id(), selectedFeaturesOnly=False)
+
+                                overlay_layer_list.append(overlay_source)
+
+                            # query the API using the bboxes from each geometry
+                            loaded_layer_list, invalid_flag = layer_rest_request(bbox_list, selected_layers, service_crs, pyqgis_group)
+
+                            if loaded_layer_list is None and invalid_flag is None:
+                                QgsMessageLog.logMessage("Script was cancelled", "Geohub-Services", level=Qgis.Info)
+                                print("Script was cancelled by user.")
+                                # Clean up temp layers even if cancelled
+                                for temp_layer in temp_layers:
+                                    QgsProject.instance().removeMapLayer(temp_layer)
+                                return
+                                
+                            clipping(loaded_layer_list, overlay_layer_list, layer_id_list, invalid_flag, pyqgis_group)
+
+                            # Remove the temporary layers after processing
+                            for temp_layer in temp_layers:
+                                QgsProject.instance().removeMapLayer(temp_layer)
+
+                        else:
+                            treeRoot.removeChildNode(pyqgis_group)
+                            QgsMessageLog.logMessage("Cancelled polygon selection", "Geohub-Services", level=Qgis.Info)
+                            print("User cancelled polygon selection")
+                            return
+
+                    # otherwise the user selected the canvas bbox for query
+                    elif dialog.get_bbox_function() == "canvas_bbox_for_service":
+                        QgsMessageLog.logMessage("Querying by Canvas", "Geohub-Services", level=Qgis.Info)
+                        print("Querying by Canvas")
+                        # get the canvas bbox and query the api
+                        str_bbox = canvas_bbox_for_service(service_crs)
+                        rest_request(selected_layers, str_bbox, service_crs, pyqgis_group)
+
+                else:
+                    treeRoot.removeChildNode(pyqgis_group)
+                    QgsMessageLog.logMessage("Script cancelled", "Geohub-Services", level=Qgis.Info)
+                    print("User clicked Cancel. Stopping script.")
+            else:
+                treeRoot.removeChildNode(pyqgis_group)
+                QgsMessageLog.logMessage("Script cancelled", "Geohub-Services", level=Qgis.Info)
+                print("User clicked Cancel. Stopping script.")
+        else:
+            treeRoot.removeChildNode(pyqgis_group)
+            iface.messageBar().pushMessage("Error", "Cannot establish connection to the network", level=Qgis.Critical)
+            QgsMessageLog.logMessage("Cannot establish connection to the network", "Geohub-Services", level=Qgis.Critical)
+            print("Cannot establish connection to the network. Please check your internet and try again.")
