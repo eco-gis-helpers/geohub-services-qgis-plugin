@@ -19,17 +19,33 @@ A QGIS plugin to import Ontario Geohub LIO data layers into the QGIS project
 Used Plugin Builder 3 Within QGIS to make the plugin structure
 The icon.png must be 24x24 pixels
 
-On MacOS
+
 
 1. In terminal, navigate to the directory where you made the plugin directory with Plugin Builder 3
-2. Set up a python virtual environment
+
+2. Set up a python virtual environment  
+
+MacOS:
 ```
 python3 -m venv geohub_env
 ```
+Windows:
+```
+python -m venv geohub_env
+```
+
 3. Activate the environment
+
+MacOS:
 ```
-source py_env/bin/activate
+source geohub_env/bin/activate
 ```
+
+Windows:
+```
+.\geohub_env\Scripts\Activate.ps1
+```
+
 4. Install pyrcc5
 ```
 pip install PyQt5
@@ -41,9 +57,29 @@ pyrcc5 resources.qrc -o resources.py
 The next steps are useful for dev, but not mandatory
 
 7. Create a Symlink - Make a symbolic link in the QGIS plugin directory pointing to the plugin development directory
+
+Mac:
 ```
 cd /Users/<username>/Library/Application \ Support/QGIS/QGIS3/profiles/default/python/plugins
 ln -s <plugin development directory>
 ```
-8. Verify the symlink with ls -l Users/<username>/Library/Application \ Support/QGIS/QGIS3/profiles/default/python/plugins
+
+Windows (admin powershell):
+```
+New-Item -ItemType SymbolicLink `
+  -Path "C:\Users\<username>\AppData\Roaming\QGIS\QGIS3\profiles\default\python\plugins\geohub_services" `
+  -Target "<plugin development directory>\geohub-services-qgis-plugin"
+```
+
+8. Verify the symlink with...
+
+Mac:
+```
+ls -l Users/<username>/Library/Application \ Support/QGIS/QGIS3/profiles/default/python/plugins
+```
+Windows:
+```
+Get-Item "C:\Users\<username>\AppData\Roaming\QGIS\QGIS3\profiles\default\python\plugins\geohub_services"
+```
+
 9. Restarting QGIS is needed anytime changes to the plugin code have been made
