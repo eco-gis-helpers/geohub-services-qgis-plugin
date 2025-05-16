@@ -15,7 +15,9 @@ from qgis.PyQt.QtWidgets import (
     QRadioButton, 
     QScrollArea, 
     QApplication,
-    QCheckBox
+    QCheckBox,
+    QLineEdit,
+    QFrame
     )
 
 from qgis.core import (
@@ -501,6 +503,12 @@ class LayerSelectionDialog(QDialog):
         # Radio buttons to choose between bbox functions
         self.radio_layer_bbox = QRadioButton("Use selected layer for bbox")
         self.radio_canvas_bbox = QRadioButton("Use canvas for bbox")
+
+        # Search bar
+        self.search_bar = QLineEdit()
+        self.search_bar.setPlaceholderText("Type to filter layers...")
+        self.search_bar.textChanged.connect(self.update_display)
+        self.no_result = QLabel("No layers found")
         
         # Set default selection
         self.radio_canvas_bbox.setChecked(True)
@@ -508,6 +516,14 @@ class LayerSelectionDialog(QDialog):
         # Add radio buttons to the layout
         layout.addWidget(self.radio_layer_bbox)
         layout.addWidget(self.radio_canvas_bbox)
+
+        line = QFrame()
+        line.setFrameShape(QFrame.HLine)
+        line.setFrameShadow(QFrame.Sunken)
+        layout.addWidget(line)
+
+        # Add search bar to layout
+        layout.addWidget(self.search_bar)
 
         # Make it scrollable for layers
         scroll_area = QScrollArea()
@@ -522,16 +538,19 @@ class LayerSelectionDialog(QDialog):
         self.checkboxes = []
         for layer in layers:
             checkbox = QCheckBox(layer[1])
+            checkbox.setObjectName(layer[1])
             checkbox.setChecked(False)  # By default, no layers are selected
             scroll_layout.addWidget(checkbox)
             self.checkboxes.append(checkbox)
 
         scroll_area.setWidget(widget)
+        scroll_layout.addWidget(self.no_result)
         layout.addWidget(scroll_area)
+        self.no_result.hide()
 
         # Add the OK and Cancel buttons
         button_box = QDialogButtonBox(QDialogButtonBox.Ok | QDialogButtonBox.Cancel)
-        button_box.accepted.connect(self.accept)
+        button_box.accepted.connect(self.validate_and_accept)
         button_box.rejected.connect(self.reject)
 
         layout.addWidget(button_box)
@@ -544,11 +563,34 @@ class LayerSelectionDialog(QDialog):
                 selected.append(layer)
         return selected
 
+    def validate_and_accept(self):
+        if len(self.selected_layers()) > 0:
+            self.accept()
+        else:
+            iface.messageBar().pushMessage("Error", "No service layer selected!", level=Qgis.Critical)
+            QgsMessageLog.logMessage("No service layer selected", "Geohub-Services", level=Qgis.Critical)
+            print("No service layer selected!")
+            raise ValueError("No service layer selected!")
+
     def get_bbox_function(self):
         # Return the selected bounding box function
         if self.radio_layer_bbox.isChecked():
             return "layer_bbox_for_service"
         else:
             return "canvas_bbox_for_service"
+
+    def update_display(self, text):
+        any_visible = False
+        for checkbox in self.checkboxes:
+            if text.lower() in checkbox.objectName().lower():
+                checkbox.show()
+                self.no_result.hide()
+                any_visible = True
+            else:
+                self.no_result.hide()
+                checkbox.hide()
+        
+        if not any_visible:
+            self.no_result.show()
         
 
