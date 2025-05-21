@@ -1,6 +1,44 @@
 # TODO (later)
 # - Add a description that shows up on the widget?
 # - Build this list programmatically based on LIO CSV?
+# FM work in progress on this...
+# - This: https://geohub.lio.gov.on.ca/datasets/lio::ontario-geohub-item-report/about
+# - led me here: https://services9.arcgis.com/a03W7iZ8T3s5vB7p/ArcGIS/rest/services/Ontario_GeoHub_Item_Report_v2/FeatureServer/0
+# - I used the query builder at the bottom to achieve this URL: https://services9.arcgis.com/a03W7iZ8T3s5vB7p/ArcGIS/rest/services/Ontario_GeoHub_Item_Report_v2/FeatureServer/0/query?where=url_slug+LIKE+%27https%3A%2F%2Fgeohub.lio%25%27+AND+item_type+%3D+%27Feature+Layer%27&outFields=publisher,agol_owner,item_title,snippet,data_url,url_slug,item_type&f=pjson
+# - result is lio_list_TEMPFILE_proposed_new.json
+# Further filtering likely required.
+
+# The resulting list could be generated each time the plugin starts, but maybe we want a pre-built list as a fallback so that the whole plugin isn't reliant on the item-report service?
+# But how often would we refresh the hard coded version, and what would trigger it?
+# Doing it dynamically each time could be something like:
+"""
+import requests
+
+url = "https://services9.arcgis.com/a03W7iZ8T3s5vB7p/ArcGIS/rest/services/Ontario_GeoHub_Item_Report_v2/FeatureServer/0/query"
+
+params = {
+    "where": "data_url LIKE 'https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA%' AND url_slug LIKE 'https://geohub.lio%' AND item_type = 'Feature Layer'",
+    "outFields": "publisher,agol_owner,item_title,snippet,data_url,url_slug,item_type",
+    "f": "json"  # or "pjson" for pretty formatting
+}
+
+response = requests.get(url, params=params)
+data = response.json()
+
+# Print sample
+for feature in data.get("features", []):
+    print(feature["attributes"]["item_title"])
+
+"""
+
+
+# 'snippet' and 'url_slug' should be shown to the user directly in the dialogue, on hover, or on click somehow.
+
+# TODO AO, we could parse this list to update the existing lio_list, but that seems like an extra step. What do you think about refactoring how each data_url is accessed and called?
+
+
+
+
 
 # TODO (now)
 # - Define what the parts of each sub list are. 

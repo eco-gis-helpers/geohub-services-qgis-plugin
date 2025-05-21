@@ -1,0 +1,1550 @@
+{
+  "objectIdFieldName" : "ObjectId", 
+  "uniqueIdField" : 
+  {
+    "name" : "ObjectId", 
+    "isSystemMaintained" : true
+  }, 
+  "globalIdFieldName" : "", 
+  "fields" : [
+    {
+      "name" : "publisher", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "publisher", 
+      "sqlType" : "sqlTypeNVarchar", 
+      "length" : 2147483647, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "agol_owner", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "agol_owner", 
+      "sqlType" : "sqlTypeNVarchar", 
+      "length" : 2147483647, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "item_title", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "item_title", 
+      "sqlType" : "sqlTypeNVarchar", 
+      "length" : 2147483647, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "snippet", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "snippet", 
+      "sqlType" : "sqlTypeNVarchar", 
+      "length" : 2147483647, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "data_url", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "data_url", 
+      "sqlType" : "sqlTypeNVarchar", 
+      "length" : 2147483647, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "url_slug", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "url_slug", 
+      "sqlType" : "sqlTypeNVarchar", 
+      "length" : 2147483647, 
+      "domain" : null, 
+      "defaultValue" : null
+    }, 
+    {
+      "name" : "item_type", 
+      "type" : "esriFieldTypeString", 
+      "alias" : "item_type", 
+      "sqlType" : "sqlTypeNVarchar", 
+      "length" : 2147483647, 
+      "domain" : null, 
+      "defaultValue" : null
+    }
+  ], 
+  "features" : [
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Wildlife Values Site", 
+        "snippet" : "Get spatial data on the location of wildlife values features (represented as points and polygons) collected because of their importance to MNRF Regional Operations Division forest management planning.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open10/MapServer/4", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::wildlife-values-site", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources", 
+        "agol_owner" : "OntarioProvincialMapping", 
+        "item_title" : "Bathymetry Index", 
+        "snippet" : "A polygon index that shows where ministry bathymetry data exists in Ontario. It also provides limited metadata information unique to each lake or river.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open01/MapServer/31", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/mnrf::bathymetry-index", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources", 
+        "agol_owner" : "OntarioProvincialMapping", 
+        "item_title" : "Bathymetry, Line", 
+        "snippet" : "This data shows depth contour lines, describing the terrain relief below the surface of bodies of water. This data should never be used for navigation.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open01/MapServer/30", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/mnrf::bathymetry-line", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources", 
+        "agol_owner" : "OntarioProvincialMapping", 
+        "item_title" : "Bathymetry, Point", 
+        "snippet" : "This data shows water depth at various places in bodies of water, called bathymetry points or spot depths. This data should never be used for navigation.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open01/MapServer/27", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/mnrf::bathymetry-point", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "OntarioProvincialMapping", 
+        "item_title" : "Building as Symbol", 
+        "snippet" : "Shows the location of permanent buildings and structures in Ontario that are landmarks e.g., tanks or towers.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open01/MapServer/33", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/mnrf::building-as-symbol", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "OntarioProvincialMapping", 
+        "item_title" : "Building to Scale", 
+        "snippet" : "Shows the location of permanent buildings and structures in Ontario.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open01/MapServer/34", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/mnrf::building-to-scale", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources", 
+        "agol_owner" : "OntarioProvincialMapping", 
+        "item_title" : "Contour", 
+        "snippet" : "Linear segments that connect contiguous points of the same elevation that are compiled and used to describe terrain relief.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open01/MapServer/29", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/mnrf::contour", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources", 
+        "agol_owner" : "OntarioProvincialMapping", 
+        "item_title" : "Ontario Dam Inventory", 
+        "snippet" : "To identify the location of medium and large dams throughout Ontario. If a dam consists of several structural pieces, it will be represented by only one point.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open04/MapServer/0", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/mnrf::ontario-dam-inventory", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "OntarioProvincialMapping", 
+        "item_title" : "Ontario Hydro Network (OHN) - Hydrographic Line", 
+        "snippet" : "Identifies hydrographic lines in Ontario as part of the Ontario Hydro Network (OHN).", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open01/MapServer/9", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/mnrf::ontario-hydro-network-ohn-hydrographic-line", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "OntarioProvincialMapping", 
+        "item_title" : "Ontario Hydro Network (OHN) - Hydrographic Point", 
+        "snippet" : "Identifies hydrographic points in Ontario as part of the Ontario Hydro Network (OHN).", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open01/MapServer/6", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/mnrf::ontario-hydro-network-ohn-hydrographic-point", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "OntarioProvincialMapping", 
+        "item_title" : "Ontario Hydro Network (OHN) - Hydrographic Poly", 
+        "snippet" : "Identifies hydrographic poly features in Ontario as part of the Ontario Hydro Network (OHN).", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open01/MapServer/10", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/mnrf::ontario-hydro-network-ohn-hydrographic-poly", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "OntarioProvincialMapping", 
+        "item_title" : "Ontario Hydro Network (OHN) - Shoreline", 
+        "snippet" : "Identifies shorelines in Ontario as part of the Ontario Hydro Network (OHN)", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open01/MapServer/14", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/mnrf::ontario-hydro-network-ohn-shoreline", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "OntarioProvincialMapping", 
+        "item_title" : "Ontario Hydro Network (OHN) - Waterbody", 
+        "snippet" : "Shows the location of waterbodies in Ontario as part of the Ontario Hydro Network (OHN).", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open01/MapServer/25", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/mnrf::ontario-hydro-network-ohn-waterbody", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "OntarioProvincialMapping", 
+        "item_title" : "Ontario Hydro Network (OHN) - Watercourse", 
+        "snippet" : "Shows the location of watercourses in Ontario as part of the Ontario Hydro Network (OHN).", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open01/MapServer/26", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/mnrf::ontario-hydro-network-ohn-watercourse", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "OntarioProvincialMapping", 
+        "item_title" : "Ontario Road Network (ORN) Road Net Element", 
+        "snippet" : "The Ontario Road Network (ORN): Road Net Element is a Linear Referencing System (LRS) database where road attributes along a linear segment are referenced as a measurement from a fixed point.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open09/MapServer/0", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/mnrf::ontario-road-network-orn-road-net-element", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "OntarioProvincialMapping", 
+        "item_title" : "Ontario Trail Network (OTN) Access Point", 
+        "snippet" : "This spatial dataset represents the main access points to a trail system that is part of the Ontario Trail Network (OTN).", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open04/MapServer/20", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/mnrf::ontario-trail-network-otn-access-point", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "OntarioProvincialMapping", 
+        "item_title" : "Ontario Trail Network (OTN) Segment", 
+        "snippet" : "This spatial dataset represents segments of trails in the Ontario Trail Network (OTN).", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open04/MapServer/19", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/mnrf::ontario-trail-network-otn-segment", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources", 
+        "agol_owner" : "OntarioProvincialMapping", 
+        "item_title" : "Spot Height", 
+        "snippet" : "Identifies spot height features.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open01/MapServer/28", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/mnrf::spot-height", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry - Provincial Mapping Unit", 
+        "agol_owner" : "OntarioProvincialMapping", 
+        "item_title" : "Tower", 
+        "snippet" : "Location of towers in Ontario.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open10/MapServer/14", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/mnrf::tower", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "OntarioProvincialMapping", 
+        "item_title" : "Utility Line", 
+        "snippet" : "Identifies utility lines in Ontario.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open05/MapServer/11", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/mnrf::utility-line", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "OntarioProvincialMapping", 
+        "item_title" : "Utility Site", 
+        "snippet" : "Shows the location of utility points, such as hydro stations.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open05/MapServer/10", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/mnrf::utility-site", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "OntarioProvincialMapping", 
+        "item_title" : "Wetland", 
+        "snippet" : "Provides a spatial representation and attribute information for wetlands in Ontario.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open01/MapServer/15", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/mnrf::wetland", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Municipal Park - Discontinued", 
+        "snippet" : "Provides the locations and types of Municipal Parks in Ontario.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/3", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::municipal-park-discontinued", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Aggregate designated area", 
+        "snippet" : null, 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open05/MapServer/19", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::aggregate-designated-area", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Aggregate extraction area", 
+        "snippet" : "This is primarily intended for use by the various MNR district staff in performing their duties. The staff most likely to use this information will be the local aggregate officers as part of their inspection duties. This is intended as a local use data class.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open05/MapServer/24", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::aggregate-extraction-area", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Aggregate inspector jurisdiction", 
+        "snippet" : "Identifies the administrative boundaries of the aggregate inspectors in Ontario.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open05/MapServer/18", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::aggregate-inspector-jurisdiction", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Aggregate site authorized - active", 
+        "snippet" : null, 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open05/MapServer/17", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::aggregate-site-authorized-active", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Aggregate site authorized - inactive", 
+        "snippet" : "Contains all the Licenced and Permitted Pits and Quarries under the Aggregate Resources Act of Ontario that are regulated by Ministry of Natural Resources.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open05/MapServer/16", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::aggregate-site-authorized-inactive", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Aggregate site authorized - partial surrender", 
+        "snippet" : null, 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open05/MapServer/23", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::aggregate-site-authorized-partial-surrender", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Aggregate site unrehabilitated", 
+        "snippet" : "Intended for use by local district staff for aggregate duties. May indicate an area that might have an elevated risk of illegal operation. May also indicate an area of interest for a new Aggregate Licence to take over.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open05/MapServer/25", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::aggregate-site-unrehabilitated", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Airport Other", 
+        "snippet" : "Abandoned airports and airports that are not recognized at the national level with an airport identifier.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open05/MapServer/1", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::airport-other", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Aquatic resource area line segment", 
+        "snippet" : "The dataset describes physical characteristics and fish species of lakes, rivers or streams. It can be linked to more detailed external fish survey information for that water body.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open07/MapServer/1", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::aquatic-resource-area-line-segment", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Aquatic resource area polygon segment ", 
+        "snippet" : null, 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open07/MapServer/2", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::aquatic-resource-area-polygon-segment-", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Aquatic Resource Area Survey Point", 
+        "snippet" : "The Aquatic Resource Area (ARA) data classes are the authoritative source of generic fisheries spatial data in Ontario.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open07/MapServer/0", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::aquatic-resource-area-survey-point", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Areas of Natural and Scientific Interest (ANSI)", 
+        "snippet" : "To identify the location and types of ANSI's which are commonly found on maps for resource management purposes.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open05/MapServer/3", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::areas-of-natural-and-scientific-interest-ansi", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Bait Harvest Area", 
+        "snippet" : "Identifies harvest areas used for baiting purposes of small fish and frogs.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open07/MapServer/3", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::bait-harvest-area", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Bear management area", 
+        "snippet" : "Bear management areas are areas of Crown land used by tourist operators licensed by the ministry to provide black bear hunting services.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open10/MapServer/23", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::bear-management-area", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Built-Up Area", 
+        "snippet" : "Identifies built-up areas in the province of Ontario as defined in the Southern Ontario Land Resource Information System (SOLRIS).", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open01/MapServer/35", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::built-up-area", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Cadastral Location", 
+        "snippet" : "A parcel of land whose surveyed boundaries were laid out during the late nineteenth century by the Crown prior to sale to groups or individuals.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open05/MapServer/15", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::cadastral-location", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of the Environment, Conservation and Parks", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Caribou range boundary", 
+        "snippet" : "The area of the province used to further the effective monitoring and planning of woodland caribou within Ontario.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open05/MapServer/8", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::caribou-range-boundary", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "CLUPA Overlay", 
+        "snippet" : "Contains area-specific land use policy and the area the policy applies to.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open06/MapServer/4", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::clupa-overlay", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of the Environment, Conservation and Parks", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Conservation authority administrative area", 
+        "snippet" : "To update and replace the 1:600,000 layer (CONSERV data class) with data supplied by the Conservation Authorities, Tertiary, and Quaternary watersheds provided by Water Resources Information Program(WRIP), and Municipal Boundaries provided by Ministry of Municipal Affairs and Housing (MMAH).", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/11", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::conservation-authority-administrative-area", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of the Environment, Conservation and Parks", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Conservation reserve regulated", 
+        "snippet" : "Land set aside under the Provincial Parks and Conservation Reserves Act, 2006.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/2", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::conservation-reserve-regulated", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Crown Game Preserves", 
+        "snippet" : "Shows the location of Crown Game Preserves in Ontario.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open05/MapServer/7", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::crown-game-preserves", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Crown land use policy area (provincial)", 
+        "snippet" : "The crown land use areas for the province of Ontario.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open06/MapServer/5", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::crown-land-use-policy-area-provincial", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Designated Gas Storage Area", 
+        "snippet" : "Provides the locations of designated gas storage areas in Ontario.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open05/MapServer/14", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::designated-gas-storage-area", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "EcoDistrict", 
+        "snippet" : "Defines the ecodistricts in the province of Ontario.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/15", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::ecodistrict", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "EcoRegion", 
+        "snippet" : "Defines the ecoregions in the province of Ontario.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/16", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::ecoregion", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "EcoZone", 
+        "snippet" : "Defines the ecozones in the province of Ontario.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/17", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::ecozone", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Emergency Management Historical Events", 
+        "snippet" : "Shows the location of past emergency events in Ontario.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open05/MapServer/20", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::emergency-management-historical-events", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Federal Land Other", 
+        "snippet" : "To identify the location and types of Federal Land, Other which are commonly found on maps for resource management purposes.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open06/MapServer/0", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::federal-land-other", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Federal Protected Areas", 
+        "snippet" : "Intended for mapping purposes to identify Federal lands", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/10", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::federal-protected-areas", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Fire Disturbance Area", 
+        "snippet" : "Get data on the locations of forest fires in Ontario.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open09/MapServer/28", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::fire-disturbance-area", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Fire Disturbance Point", 
+        "snippet" : "Represents the estimated starting point of a forest fire.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open09/MapServer/30", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::fire-disturbance-point", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Fire Management Agreement Area", 
+        "snippet" : "The boundaries of fire management agreement areas negotiated by the Crown and the Ministry of Natural Resources and Forestry's Aviation Forest Fire and Emergency Services program.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open05/MapServer/13", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::fire-management-agreement-area", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Fire Response Plan Area", 
+        "snippet" : "Get data on fire response plan area boundaries and recommended response types for wildfires.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open09/MapServer/33", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::fire-response-plan-area", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Fire Weather Sector", 
+        "snippet" : "Get data on boundaries of local climatic areas used for forest fire weather forecasting.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open09/MapServer/31", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::fire-weather-sector", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Fire, Aviation and Emergency Facility Point", 
+        "snippet" : "The locations of the Ministry of Natural Resources and Forestry's (MNRF) Aviation Forest Fire and Emergency Services (AFFES) branch facilities.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open05/MapServer/21", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::fire-aviation-and-emergency-facility-point", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "First Nation Reserve", 
+        "snippet" : "The First Nation Reserve layer is considered an index and should only be used for general mapping purposes. The data should not be used for surveying purposes. The accuracy of the data is not known.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/12", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::first-nation-reserve", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Fish activity area", 
+        "snippet" : null, 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open07/MapServer/31", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::fish-activity-area", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Fish culture operation areas of impact", 
+        "snippet" : "Identifies the areas that Ministry of Natural Resources and Forestry fish culture facilities directly influence.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open07/MapServer/33", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::fish-culture-operation-areas-of-impact", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Fish Culture Operation, Ministry of Natural Resources", 
+        "snippet" : "Identifies the locations of the Ontario Ministry of Natural Resources’ (MNR) fish culture stations (or hatcheries) and sub-stations.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open07/MapServer/10", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::fish-culture-operation-ministry-of-natural-resources", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Fish Pathogen Management Zone", 
+        "snippet" : "Shows areas affected by fish pathogens.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open07/MapServer/12", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::fish-pathogen-management-zone", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Fish Pathogen Management Zone Boundary Source", 
+        "snippet" : "Identifies the boundaries for the Fish Pathogen Management Zones.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open07/MapServer/13", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::fish-pathogen-management-zone-boundary-source", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Fisheries Management Zone", 
+        "snippet" : "Identifies Fish Management Zones throughout Ontario.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open07/MapServer/14", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::fisheries-management-zone", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Fishing Access Point", 
+        "snippet" : "Sites where anglers can access fishing locations.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open07/MapServer/15", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::fishing-access-point", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Forest Abiotic Damage Event", 
+        "snippet" : "Identifies locations of abiotic damage events in Ontario forests.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open07/MapServer/16", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::forest-abiotic-damage-event", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Forest Disease Damage Event", 
+        "snippet" : "Identifies events where disease has damaged forests in Ontario.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open07/MapServer/17", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::forest-disease-damage-event", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Forest genetics zone", 
+        "snippet" : "This spatial data identifies breeding zones used by forest managers and forest genetic associations to manage provincial forest genetic assets.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open07/MapServer/18", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::forest-genetics-zone", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Forest Management Unit", 
+        "snippet" : "Identifies the boundaries of Forest Management Units in Ontario.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open07/MapServer/20", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::forest-management-unit", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Forest Miscellaneous Damage Event", 
+        "snippet" : "Shows forest damage in Ontario caused by multiple factors.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open07/MapServer/21", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::forest-miscellaneous-damage-event", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Forest Processing Facility", 
+        "snippet" : "Information on facilities that process or convert forest resources.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open07/MapServer/22", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::forest-processing-facility", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "FRI Status", 
+        "snippet" : "The current production status of all Forest Resources Inventory (FRI) units in the province.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open07/MapServer/23", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::fri-status", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Geographic Names Ontario", 
+        "snippet" : "Locations of geographic features and unincorporated places that have been officially named, or are being considered for official naming.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open09/MapServer/36", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::geographic-names-ontario", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Geographic Township Improved", 
+        "snippet" : "A guide to the fundamental land subdivision of the Province. The geographic township fabric is shown as it was originally surveyed, unless it has been annulled upon the instruction of the Surveyor General.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open06/MapServer/1", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::geographic-township-improved", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Municipal Affairs and Housing", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Greenbelt designation", 
+        "snippet" : "This data shows the component parts of the Greenbelt Area as set out in the Greenbelt Act, 2005.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open06/MapServer/15", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::greenbelt-designation", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Municipal Affairs and Housing", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Greenbelt hamlet", 
+        "snippet" : "This layer is to provide the approximate location of Hamlets within the Protected Countryside. This Plan defers to municipal official plans for the detailed delineation of Hamlets. For precise boundaries and locations of Hamlets the appropriate municipality should be consulted.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open06/MapServer/16", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::greenbelt-hamlet", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Municipal Affairs and Housing", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Greenbelt outer boundary", 
+        "snippet" : "To identify the Greenbelt Area as defined by the Greenbelt Act, 2005.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open06/MapServer/17", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::greenbelt-outer-boundary", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Municipal Affairs and Housing", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Greenbelt river valley connection", 
+        "snippet" : "To identify the location of river valley connections.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open06/MapServer/18", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::greenbelt-river-valley-connection", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Municipal Affairs and Housing", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Greenbelt specialty crop areas", 
+        "snippet" : "To identify the location of specialty crop areas in the Greenbelt Plan, namely the Niagara Peninsula Tender Fruit and Grape Lands and the Holland Marsh.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open06/MapServer/19", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::greenbelt-specialty-crop-areas", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Municipal Affairs and Housing", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Greenbelt towns and villages", 
+        "snippet" : "The approximate location of towns and villages inside the area protected by the Greenbelt Plan.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open06/MapServer/20", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::greenbelt-towns-and-villages", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Historical Fire Management Zones", 
+        "snippet" : "Get data on historical fire management zones", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open09/MapServer/32", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::historical-fire-management-zones", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Hunting and fishing licence issuers", 
+        "snippet" : null, 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open10/MapServer/12", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::hunting-and-fishing-licence-issuers", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of the Environment, Conservation and Parks", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Lake Simcoe Protection Act watershed boundary", 
+        "snippet" : "This boundary is used in the management of watershed-based planning by the Lake Simcoe Region Conservation Authority (LSRCA). The Boundary was created using the LSRCA 2002 5-metre Digital Elevation Model (DEM) and provides the best science-based definition available where possible. This boundary is not the jurisdictional boundary of the Lake Simcoe Region Conservation Authority, and is for the purpose of supporting the Lake Simcoe Protection Act (LSPA).", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open06/MapServer/21", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::lake-simcoe-protection-act-watershed-boundary", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Landform Conservation Area", 
+        "snippet" : "To assist implementation of the Oak Ridges Moraine Conservation Plan, Ontario Regulation 140/02 made under the Oak Ridges Moraine Conservation Act, 2001.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/1", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::landform-conservation-area", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Lot fabric improved", 
+        "snippet" : "Land identifying a portion of a concession within a geographic township. The townships, concessions and lots comprise the original township fabric of the province.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open06/MapServer/2", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::lot-fabric-improved", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Land Information Ontario", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Ministry of Health Service Provider Locations", 
+        "snippet" : "The Ministry of Health Service Provider Locations (MOHSERLO) geospatial dataset contains the locations ofhealth service providers in Ontario.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open09/MapServer/26", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::ministry-of-health-service-provider-locations-1", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Ministry of Natural Resources road condition inspection line", 
+        "snippet" : "To support MNR road condition/inspection data collection activities under the Infrastructure for Jobs and Prosperity Act.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open09/MapServer/49", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::ministry-of-natural-resources-road-condition-inspection-line", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Ministry of Natural Resources road condition inspection point", 
+        "snippet" : "To support MNR road condition/inspection data collection activities under the Infrastructure for Jobs and Prosperity Act.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open09/MapServer/48", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::ministry-of-natural-resources-road-condition-inspection-point", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Ministry of Natural Resources road crossing railway", 
+        "snippet" : "To support MNR road condition/inspection data collection activities under the Infrastructure for Jobs and Prosperity Act.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open09/MapServer/46", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::ministry-of-natural-resources-road-crossing-railway", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Ministry of Natural Resources road crossing water - bridge", 
+        "snippet" : "To support MNR road condition/inspection data collection activities under the Infrastructure for Jobs and Prosperity Act.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open09/MapServer/42", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::ministry-of-natural-resources-road-crossing-water-bridge", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Ministry of Natural Resources road crossing water - non-bridge", 
+        "snippet" : "To support MNR road condition/inspection data collection activities under the Infrastructure for Jobs and Prosperity Act.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open09/MapServer/38", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::ministry-of-natural-resources-road-crossing-water-non-bridge", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "MNR District", 
+        "snippet" : "Extents of MNR administrative areas that divides the Regions into smaller organizational units for the purpose of managing Ministry programs and resources at a district level.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/6", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::mnr-district", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "MNR Region", 
+        "snippet" : "Extents of MNR administrative areas that comprise of a number of districts for the purpose of managing Ministry programs and resources at a regional level.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/7", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::mnr-region", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "MNR Road Barrier", 
+        "snippet" : "Identifies the location of a restriction, or control point, to a road segment or a road network.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open09/MapServer/22", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::mnr-road-barrier", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "MNR Road Segments", 
+        "snippet" : "Information about roads under the jurisdiction of Ministry of Natural Resources (MNR).", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open09/MapServer/18", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::mnr-road-segments", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "MNR Sign Site", 
+        "snippet" : "Sites where a sign is posted and maintained by, or is of interest to the Ontario Ministry of Natural Resources (MNR).", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open09/MapServer/21", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::mnr-sign-site", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Municipal Affairs and Housing", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Municipal Boundary - Lower and Single Tier", 
+        "snippet" : "To identify the location of Single Tier and Lower Tier municipalities.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/14", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::municipal-boundary-lower-and-single-tier", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Municipal Affairs and Housing", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Municipal Boundary - Upper Tier and District", 
+        "snippet" : "To identify the location of Upper Tiers and Territorial Districts", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/13", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::municipal-boundary-upper-tier-and-district", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Natural Heritage System Area", 
+        "snippet" : "Systems of natural core areas and key natural corridors or linkages, such as rivers and valleys, with significant ecological value for use in land use planning.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open06/MapServer/22", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::natural-heritage-system-area", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Niagara Escarpment Minor Urban Centre", 
+        "snippet" : "To depict the the boundaries of the Niagara Escarpment Plan Minor Urban Centre land use designation.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open06/MapServer/24", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::niagara-escarpment-minor-urban-centre", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Niagara Escarpment Plan Boundary", 
+        "snippet" : "Shows the area where the policies and objectives of the Niagara Escarpment Plan apply.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open06/MapServer/25", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::niagara-escarpment-plan-boundary", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Niagara Escarpment Policy Area", 
+        "snippet" : "To depict the internal boundaries of the Niagara Escarpment Plan Area.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open06/MapServer/27", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::niagara-escarpment-policy-area", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Municipal Affairs and Housing", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Oak Ridges Moraine (ORM) Land Use Designation", 
+        "snippet" : "This data set contains the land use designations and the regulations on the boundaries of the Oak Ridges Moraine.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open06/MapServer/28", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::oak-ridges-moraine-orm-land-use-designation", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Municipal Affairs and Housing", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Oak Ridges Moraine (ORM) Planning Area", 
+        "snippet" : "This dataset contains a single polygon with 2600 points, representing the boundary of the Oak Ridges Moraine.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open06/MapServer/29", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::oak-ridges-moraine-orm-planning-area", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Official airports", 
+        "snippet" : "Official airports recognized at the national level with an airport identifier.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open05/MapServer/0", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::official-airports", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Ontario water and weather monitoring stations", 
+        "snippet" : "Locations of water and weather monitoring stations used to assess flood and drought conditions across Ontario.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open08/MapServer/30", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::ontario-water-and-weather-monitoring-stations", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Ontario waterbody location identifier", 
+        "snippet" : null, 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open08/MapServer/17", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::ontario-waterbody-location-identifier", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of the Environment, Conservation and Parks", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Park administration zone", 
+        "snippet" : "For the administration of Provincial Parks.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/5", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::park-administration-zone", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Petroleum Crown Lake Grid", 
+        "snippet" : "Identifies the offshore oil and gas grid system.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open08/MapServer/20", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::petroleum-crown-lake-grid", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Petroleum Historical Oil Field", 
+        "snippet" : "Indicates the boundaries of Historical Oil Fields according to the Oil, Gas and Salt Resources Act.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open08/MapServer/21", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::petroleum-historical-oil-field", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Petroleum Well", 
+        "snippet" : "The locations and types of petroleum wells in the province.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open08/MapServer/22", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::petroleum-well", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Province", 
+        "snippet" : "The outer boundary of the Province of Ontario.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/0", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::province", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of the Environment, Conservation and Parks", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Provincial park regulated", 
+        "snippet" : "To display areas regulated under the Provincial Parks and Conservation Reserves Act, 2006 and managed by Ontario Parks.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/4", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::provincial-park-regulated", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Provincially tracked species (1km grid)", 
+        "snippet" : "Get data on provincially tracked species locations generalized to a 1km by 1km grid.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open07/MapServer/25", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::provincially-tracked-species-1km-grid", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Restricted Fire Zone", 
+        "snippet" : "Get data on areas where outdoor fires are not permitted.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open09/MapServer/34", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::restricted-fire-zone", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Site District", 
+        "snippet" : "Defines the site regions and districts in the province of Ontario.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/18", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::site-district", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Site Region ", 
+        "snippet" : "The Site Regions of Ontario was used for descriptive, planning, and resource management purposes. This upper level in its hierarchy was most useful for provincial and regional roll-ups of data and for strategic planning. Site Districts Of Ontario is a more detailed lower (finer-scale) level of the hierarchy, and was more useful for detailed resource management prescriptions and other local and site planning applications. This layer is designed to be used as a spatial selection tool and as a background layer suitable for overlay and or intersection with numerous scales or current hydrologic data.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open03/MapServer/19", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::site-region-", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Snow Survey Measurement Locations", 
+        "snippet" : "This package contains location information for two of Ontario’s snow monitoring networks (SWMC and SNOW)", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open08/MapServer/31", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::snow-survey-measurement-locations", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of the Environment, Conservation and Parks", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Source Protection Area Generalized", 
+        "snippet" : "This dataset supports the Clean Water Act (CWA) and is available to the public for general mapping and GIS applications.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open05/MapServer/2", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::source-protection-area-generalized", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Agriculture, Food and Rural Affairs", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Tile Drainage Area", 
+        "snippet" : "Created for the purpose of OMAFRA having the knowledge of where agricultural field tile drainage has been installed and whether it was installed using a systematic or random design. This information also exists so that OMAFRA can validate whether the licensed contractors have met the conditions of their license.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open01/MapServer/11", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::tile-drainage-area", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Trapline area", 
+        "snippet" : "Trapline areas are areas of Crown and private land used by trappers licensed by the ministry to harvest furbearing mammals for commercial use.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open10/MapServer/24", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::trapline-area", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "UTM (Universal Transverse Mercator) 1 Km Grid", 
+        "snippet" : "Shows a standard 1 km x 1 km reference grid for Ontario.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open04/MapServer/8", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::utm-universal-transverse-mercator-1-km-grid", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "UTM (Universal Transverse Mercator) 10 Km Grid", 
+        "snippet" : "Shows a standard 10 km x 10 km reference grid for Ontario.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open04/MapServer/10", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::utm-universal-transverse-mercator-10-km-grid", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "UTM (Universal Transverse Mercator) 100 KM Grid", 
+        "snippet" : "Shows a standard 100 km x 100 km reference grid for Ontario.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open04/MapServer/11", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::utm-universal-transverse-mercator-100-km-grid", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "UTM (Universal Transverse Mercator) 5 Km Grid", 
+        "snippet" : "Shows a standard 5 km x 5 km reference grid for Ontario.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open04/MapServer/9", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::utm-universal-transverse-mercator-5-km-grid", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Waste Management Attenuation Zone", 
+        "snippet" : "Identifies the boundaries for \"contaminant attenuation zone\" sites in Ontario.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open08/MapServer/10", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::waste-management-attenuation-zone", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Waste Management Site", 
+        "snippet" : "Contains Waste Disposal Site types collected by the Ministry of Natural Resources.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open08/MapServer/9", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::waste-management-site", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Wildlife Management Unit", 
+        "snippet" : "A representation of Wildlife Management Units, the administrative coverage areas that serve as a land base for wildlife research and management.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open05/MapServer/5", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::wildlife-management-unit", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Wildlife Values Area", 
+        "snippet" : "Get spatial data on the location of wildlife values features (represented as points and polygons) collected because of their importance to MNRF Regional Operations Division forest management planning.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open10/MapServer/10", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::wildlife-values-area", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Natural Resources and Forestry", 
+        "agol_owner" : "LandInformationOntario", 
+        "item_title" : "Wooded Area", 
+        "snippet" : "This dataset depicts areas in Ontario covered by trees.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open07/MapServer/29", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/lio::wooded-area", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Agriculture, Food and Rural Affairs", 
+        "agol_owner" : "OMAFRAGIS", 
+        "item_title" : "Constructed Drain", 
+        "snippet" : "This data keeps the Ontario Ministry of Agriculture, Food and Rural Affairs' records of modified or newly constructed drainage systems current.\r\n\r\nConstructed drains include ditches, buried tile systems, or natural watercourses that have been modified to improve drainage.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open01/MapServer/7", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/ontarioca11::constructed-drain", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Agriculture, Food and Rural Affairs", 
+        "agol_owner" : "OMAFRAGIS", 
+        "item_title" : "Soil Survey Complex", 
+        "snippet" : "The soil complex database contains other descriptive information including slope class, Canada Land Inventory (CLI) ranking, stoniness, drainage class, texture etc. The CLI components of the data layer is generally intended to be used as a tool for broad land use planning decision making, and not necessarily for field-level management. For more information on the guidelines: http://www.omafra.gov.on.ca/english/landuse/classify.htm The soil complex information can also be applied to source water protection, nutrient management and soil erosion modeling. Note: The soil complex data layer is subject to a continuous improvement strategy.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open05/MapServer/9", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/ontarioca11::soil-survey-complex", 
+        "item_type" : "Feature Layer"
+      }
+    }, 
+    {
+      "attributes" : {
+        "publisher" : "Ontario Ministry of Agriculture, Food and Rural Affairs", 
+        "agol_owner" : "OMAFRAGIS", 
+        "item_title" : "Tile Drainage Area", 
+        "snippet" : "Created for the purpose of OMAFRA having the knowledge of where agricultural field tile drainage has been installed and whether it was installed using a systematic or random design. This information also exists so that OMAFRA can validate whether the licensed contractors have met the conditions of their license.", 
+        "data_url" : "https://ws.lioservices.lrc.gov.on.ca/arcgis2/rest/services/LIO_OPEN_DATA/LIO_Open01/MapServer/11", 
+        "url_slug" : "https://geohub.lio.gov.on.ca/datasets/ontarioca11::tile-drainage-area", 
+        "item_type" : "Feature Layer"
+      }
+    }
+  ]
+}
