@@ -67,7 +67,9 @@ def get_service_crs():
     if internet_on():
         with urllib.request.urlopen(json_lio1) as url:
             data = json.loads(url.read().decode())
-            
+    else:
+        raise ConnectionError("No internet connection; cannot fetch CRS.")
+
     service_crs = str(data['spatialReference']['latestWkid'])
     return service_crs
 
